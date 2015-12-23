@@ -1,0 +1,28 @@
+{
+  "name": "lazuli-layout",
+  "version": "0.0.3",
+  "description": "Powerful Flexbox layout for Lazuli and React.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jamie Greeff <jamiegreeff+git@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "reactjs",
+    "style",
+    "inline"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/madjam002/lazuli.git"
+  },
+  "peerDependencies": {
+    "lazuli": "^0.0.0"
+  },
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  }
+}
