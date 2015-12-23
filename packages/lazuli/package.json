@@ -17,5 +17,8 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/madjam002/lazuli.git"
+  },
+  "dependencies": {
+    "react-style-normalizer": "^1.2.8"
   }
 }
