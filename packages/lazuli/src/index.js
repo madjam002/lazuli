@@ -1,4 +1,5 @@
 export * from './inject'
 export * from './prepare'
+export * from './prop-types'
 export * from './registry'
 export * from './stylesheet'

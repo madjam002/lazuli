@@ -18,6 +18,9 @@
     "type": "git",
     "url": "git://github.com/madjam002/lazuli.git"
   },
+  "peerDependencies": {
+    "react": "^0.14.3"
+  },
   "dependencies": {
     "react-style-normalizer": "^1.2.8"
   }
