@@ -19,9 +19,7 @@
     "url": "git://github.com/madjam002/lazuli.git"
   },
   "peerDependencies": {
-    "lazuli": "^0.0.0"
-  },
-  "dependencies": {
+    "lazuli": "^0.0.0",
     "react": "^0.14.3",
     "react-dom": "^0.14.3"
   }
