@@ -8,7 +8,15 @@ export function inject() {
   } = ReactElement
 
   ReactElement.createElement = function (type, config, ...children) {
-    if (config && config.style) {
+    if (
+      typeof type === 'string' &&
+      config && config.style &&
+      (
+        Array.isArray(config.style) ||
+        (typeof config.style === 'object' && !config.style.__lazuliPrepared) ||
+        typeof config.style !== 'object'
+      )
+    ) {
       const newConfig = {
         ...config,
         style: prepare(config.style),

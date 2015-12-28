@@ -11,7 +11,7 @@ function process(style) {
   return computedStyle
 }
 
-export function prepare(styles) {
+export function prepare(styles, rootCall = true) {
   if (!styles) {
     return undefined
   }
@@ -27,12 +27,16 @@ export function prepare(styles) {
 
   const result = {}
   styles.forEach(style => {
-    const computedStyle = prepare(style)
+    const computedStyle = prepare(style, false)
 
     if (computedStyle) {
       Object.assign(result, computedStyle)
     }
   })
+
+  if (rootCall) {
+    Object.defineProperty(result, '__lazuliPrepared', { value: true })
+  }
 
   return result
 }
