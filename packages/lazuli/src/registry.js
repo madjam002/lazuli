@@ -24,4 +24,8 @@ export class Registry {
     return styles[id] || emptyStyle
   }
 
+  static getAll() {
+    return styles
+  }
+
 }

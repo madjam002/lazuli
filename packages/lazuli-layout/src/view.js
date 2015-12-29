@@ -1,9 +1,9 @@
 import React from 'react'
-import {StyleSheet, prepare} from 'lazuli'
+import {StyleSheet} from 'lazuli'
 
 export function View(props) {
   return (
-    <div {... props} style={prepare([styles.view, props.style])}>
+    <div {... props} style={[styles.view, props.style]}>
       {props.children}
     </div>
   )

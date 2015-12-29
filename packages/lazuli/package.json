@@ -1,6 +1,6 @@
 {
   "name": "lazuli",
-  "version": "0.0.3",
+  "version": "0.0.0",
   "description": "Styling for React.",
   "main": "lib/index.js",
   "scripts": {

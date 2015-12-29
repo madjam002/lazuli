@@ -18,6 +18,10 @@ export class StyleSheet {
       const style = config[key]
       const computedStyle = normalize(style)
 
+      if (process.env.NODE_ENV !== 'production') {
+        Object.defineProperty(computedStyle, '__lazuliStyleName', { value: key })
+      }
+
       result[key] = Registry.register(computedStyle)
     }
 
