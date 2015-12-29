@@ -1,6 +1,6 @@
 {
   "name": "lazuli-css",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Extracting styles to CSS from Lazuli.",
   "main": "lib/index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "url": "git://github.com/madjam002/lazuli.git"
   },
   "peerDependencies": {
-    "lazuli": "^0.0.0",
+    "lazuli": "^0.0.1",
     "react": "^0.14.3"
   },
   "dependencies": {
